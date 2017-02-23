@@ -23,8 +23,12 @@
  */
 package za.co.mmagon.jwebswing.plugins.fontawesome;
 
+import java.util.logging.Logger;
+import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;
+import za.co.mmagon.jwebswing.plugins.PluginInformation;
+import za.co.mmagon.logger.LogFactory;
 
 /**
  *
@@ -32,8 +36,17 @@ import za.co.mmagon.jwebswing.PageConfigurator;
  * @since 15 Feb 2017
  *
  */
-public class FontAwesomePageConfigurator implements PageConfigurator
+@PluginInformation(pluginName = "Font Awesome", pluginUniqueName = "font-awesome", pluginDescription = "Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. ", pluginVersion = "4.7",
+        pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons", pluginSubtitle = "In a single collection, Font Awesome is a pictographic language of web-related actions. ",
+        pluginGitUrl = "https://github.com/GedMarc/JWebSwing-FontAwesomePlugin", pluginSourceUrl = "",
+        pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-FontAwesomePlugin/wiki",
+        pluginOriginalHomepage = "http://fontawesome.io/")
+public class FontAwesomePageConfigurator extends PageConfigurator
 {
+
+    private static final long serialVersionUID = 1L;
+    private static final Logger log = LogFactory.getInstance().getLogger("FontAwesome");
+    public static final String FontAwesome4Enabled = "font-awesome-4-enabled";
 
     public FontAwesomePageConfigurator()
     {
@@ -43,7 +56,24 @@ public class FontAwesomePageConfigurator implements PageConfigurator
     @Override
     public Page configure(Page page)
     {
-        page.getBody().getCssReferences().add(FontAwesomeReferencePool.FontAwesomeReference.getJavaScriptReference());
+        if (!page.isConfigured())
+        {
+            if (page.getBody().readChildrenPropertyFirstResult(FontAwesome4Enabled, true))
+            {
+                page.getBody().getCssReferences().add(FontAwesomeReferencePool.FontAwesomeReference.getJavaScriptReference());
+            }
+        }
         return page;
+    }
+
+    /**
+     * Sets the component as font awesome required to build
+     *
+     * @param component
+     * @param required
+     */
+    public static void setFontAwesomeRequired(Component component, boolean required)
+    {
+        component.getProperties().put(FontAwesome4Enabled, required);
     }
 }

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.fontawesome;
 
 import za.co.mmagon.jwebswing.base.html.Italic;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * The FontAwesome project.
@@ -26,6 +27,7 @@ import za.co.mmagon.jwebswing.base.html.Italic;
  * @since 21 May 2016
  * @version 1.0
  */
+@ComponentInformation(name = "Font Awesome 4.7", description = "The font awesome tag", url = "www.fontawesome.com")
 public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
 {
 
@@ -39,13 +41,12 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
      */
     public FontAwesome(FontAwesomeIcons icon, FontAwesomeProperties... size)
     {
-        addCssReference(FontAwesomeReferencePool.FontAwesomeReference.getCssReference());
         setTiny(true);
         if (icon != null)
         {
             addClass(icon.toString());
         }
-        
+
         if (size != null)
         {
             for (FontAwesomeProperties fontAwesomeProperties : size)
@@ -79,7 +80,7 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
     {
         return new FontAwesome(icon, size);
     }
-    
+
     /**
      * Creates a new FontAwesome Icon with the given icon and size
      *
@@ -88,7 +89,7 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
      */
     public static FontAwesome icon(FontAwesomeIcons icon)
     {
-        return new FontAwesome(icon, (FontAwesomeProperties)null);
+        return new FontAwesome(icon, (FontAwesomeProperties) null);
     }
 
     /**
