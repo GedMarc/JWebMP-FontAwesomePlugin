@@ -36,8 +36,10 @@ import za.co.mmagon.logger.LogFactory;
  * @since 15 Feb 2017
  *
  */
-@PluginInformation(pluginName = "Font Awesome", pluginUniqueName = "font-awesome", pluginDescription = "Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. ", pluginVersion = "4.7",
-        pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons", pluginSubtitle = "In a single collection, Font Awesome is a pictographic language of web-related actions. ",
+@PluginInformation(pluginName = "Font Awesome", pluginUniqueName = "font-awesome", pluginDescription = "Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. ",
+        pluginVersion = "4.7",
+        pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons",
+        pluginSubtitle = "In a single collection, Font Awesome is a pictographic language of web-related actions. ",
         pluginGitUrl = "https://github.com/GedMarc/JWebSwing-FontAwesomePlugin", pluginSourceUrl = "",
         pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-FontAwesomePlugin/wiki",
         pluginOriginalHomepage = "http://fontawesome.io/")
