@@ -1,4 +1,4 @@
-/*
+/* 
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -57,6 +57,7 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
                 }
             }
         }
+        FontAwesomePageConfigurator.setFontAwesomeRequired(this, true);
     }
 
     /**

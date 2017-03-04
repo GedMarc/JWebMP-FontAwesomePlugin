@@ -4,5 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="JWebswing Static"/>
         <group name="JWebSwing"/>
+        <group name="JWebSwing Plugins">
+            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/FontAwesomePlugin/test/za/co/mmagon/jwebswing/plugins/fontawesome/FontAwesomePageConfiguratorTest.java</file>
+            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/FontAwesomePlugin/src/za/co/mmagon/jwebswing/plugins/fontawesome/FontAwesomePageConfigurator.java</file>
+            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/FontAwesomePlugin/src/za/co/mmagon/jwebswing/plugins/fontawesome/FontAwesome.java</file>
+        </group>
     </open-files>
 </project-private>
