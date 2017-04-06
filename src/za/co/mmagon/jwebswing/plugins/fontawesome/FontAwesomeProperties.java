@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.fontawesome;
 
 /**
+ * Specific file sizes or whether it is centered
  *
  * @author ged_m
  * @since 21 May 2016
@@ -31,7 +32,7 @@ public enum FontAwesomeProperties implements IFontAwesomeProperty
      * 2em
      */
     $2x,
-    /** 
+    /**
      * 3em
      */
     $3x,
@@ -42,7 +43,7 @@ public enum FontAwesomeProperties implements IFontAwesomeProperty
     /**
      * 5em
      */
-    $5x, 
+    $5x,
     /**
      * center
      */

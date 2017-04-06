@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -30,7 +30,7 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
 public enum FontAwesomeReferencePool implements ReferencePool
 {
     FontAwesomeReference(null,
-            new CSSReference("FontAwesomeCSS", 4.6, "bower_components/font-awesome/css/font-awesome.css"));
+                         new CSSReference("FontAwesomeCSS", 4.6, "bower_components/font-awesome/css/font-awesome.min.css"));
 
     ;
     private FontAwesomeReferencePool()

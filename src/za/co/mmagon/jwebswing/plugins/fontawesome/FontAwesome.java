@@ -57,7 +57,7 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
                 }
             }
         }
-        FontAwesomePageConfigurator.setFontAwesomeRequired(this, true);
+        FontAwesomePageConfigurator.setRequired(this, true);
     }
 
     /**

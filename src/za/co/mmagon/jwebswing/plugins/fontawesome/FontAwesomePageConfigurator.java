@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -59,10 +59,8 @@ public class FontAwesomePageConfigurator extends PageConfigurator
     {
         if (!page.isConfigured())
         {
-            if (page.getBody().readChildrenPropertyFirstResult(FontAwesome4Enabled, true))
-            {
-                page.getBody().getCssReferences().add(FontAwesomeReferencePool.FontAwesomeReference.getCssReference());
-            }
+            page.getBody().getCssReferences().add(FontAwesomeReferencePool.FontAwesomeReference.getCssReference());
+
         }
         return page;
     }
@@ -73,7 +71,7 @@ public class FontAwesomePageConfigurator extends PageConfigurator
      * @param component
      * @param required
      */
-    public static void setFontAwesomeRequired(Component component, boolean required)
+    public static void setRequired(Component component, boolean required)
     {
         component.getProperties().put(FontAwesome4Enabled, required);
     }
