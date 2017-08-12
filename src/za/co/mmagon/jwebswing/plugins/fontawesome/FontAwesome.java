@@ -22,89 +22,94 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * The FontAwesome project.
  * <p>
- * @author Marc Magon
+ *
  * @param <P> All the font awesome property CSS classes
- * @since 21 May 2016
+ *
+ * @author Marc Magon
  * @version 1.0
+ * @since 21 May 2016
  */
 @ComponentInformation(name = "Font Awesome 4.7", description = "The font awesome tag", url = "www.fontawesome.com")
 public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /**
-     * Construct a new instance of the font awesome
-     *
-     * @param icon
-     * @param size
-     */
-    public FontAwesome(FontAwesomeIcons icon, FontAwesomeProperties... size)
-    {
-        setTiny(true);
-        if (icon != null)
-        {
-            addClass(icon.toString());
-        }
-
-        if (size != null)
-        {
-            for (FontAwesomeProperties fontAwesomeProperties : size)
-            {
-                if (fontAwesomeProperties != null)
-                {
-                    addClass(fontAwesomeProperties.toString());
-                }
-            }
-        }
-        FontAwesomePageConfigurator.setRequired(this, true);
-    }
-
-    /**
-     * Construct a new instant of a font awesome icon
-     *
-     * @param icon
-     */
-    public FontAwesome(FontAwesomeIcons icon)
-    {
-        this(icon, (FontAwesomeProperties) null);
-    }
-
-    /**
-     * Creates a new FontAwesome Icon with the given icon and size
-     *
-     * @param icon The icon to use
-     * @param size The size to have
-     * @return
-     */
-    public static FontAwesome icon(FontAwesomeIcons icon, FontAwesomeProperties... size)
-    {
-        return new FontAwesome(icon, size);
-    }
-
-    /**
-     * Creates a new FontAwesome Icon with the given icon and size
-     *
-     * @param icon The icon to use
-     * @return
-     */
-    public static FontAwesome icon(FontAwesomeIcons icon)
-    {
-        return new FontAwesome(icon, (FontAwesomeProperties) null);
-    }
-
-    /**
-     * Sets the size of this icon
-     *
-     * @param size
-     * @return
-     */
-    public FontAwesome setSize(FontAwesomeProperties size)
-    {
-        if (size != null)
-        {
-            addClass(size.toString());
-        }
-        return this;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	/**
+	 * Construct a new instance of the font awesome
+	 *
+	 * @param icon
+	 * @param size
+	 */
+	public FontAwesome(FontAwesomeIcons icon, FontAwesomeProperties... size)
+	{
+		setTiny(true);
+		if (icon != null)
+		{
+			addClass(icon.toString());
+		}
+		
+		if (size != null)
+		{
+			for (FontAwesomeProperties fontAwesomeProperties : size)
+			{
+				if (fontAwesomeProperties != null)
+				{
+					addClass(fontAwesomeProperties.toString());
+				}
+			}
+		}
+		FontAwesomePageConfigurator.setRequired(this, true);
+	}
+	
+	/**
+	 * Construct a new instant of a font awesome icon
+	 *
+	 * @param icon
+	 */
+	public FontAwesome(FontAwesomeIcons icon)
+	{
+		this(icon, (FontAwesomeProperties) null);
+	}
+	
+	/**
+	 * Creates a new FontAwesome Icon with the given icon and size
+	 *
+	 * @param icon The icon to use
+	 * @param size The size to have
+	 *
+	 * @return
+	 */
+	public static FontAwesome icon(FontAwesomeIcons icon, FontAwesomeProperties... size)
+	{
+		return new FontAwesome(icon, size);
+	}
+	
+	/**
+	 * Creates a new FontAwesome Icon with the given icon and size
+	 *
+	 * @param icon The icon to use
+	 *
+	 * @return
+	 */
+	public static FontAwesome icon(FontAwesomeIcons icon)
+	{
+		return new FontAwesome(icon, (FontAwesomeProperties) null);
+	}
+	
+	/**
+	 * Sets the size of this icon
+	 *
+	 * @param size
+	 *
+	 * @return
+	 */
+	public FontAwesome setSize(FontAwesomeProperties size)
+	{
+		if (size != null)
+		{
+			addClass(size.toString());
+		}
+		return this;
+	}
 }

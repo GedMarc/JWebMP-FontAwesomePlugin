@@ -17,10 +17,9 @@
 package za.co.mmagon.jwebswing.plugins.fontawesome;
 
 /**
- * 
  * @author GedMarc
  */
 public interface IFontAwesomeProperty
 {
-    
+
 }

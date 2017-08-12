@@ -28,35 +28,34 @@ import za.co.mmagon.BaseTestClass;
 import za.co.mmagon.jwebswing.Page;
 
 /**
- *
  * @author GedMarc
  */
 public class FontAwesomeTest extends BaseTestClass
 {
-
-    public FontAwesomeTest()
-    {
-    }
-
-    @Test
-    public void testIcon_FontAwesomeIcons_FontAwesomePropertiesArr()
-    {
-    }
-
-    @Test
-    public void testIcon_FontAwesomeIcons()
-    {
-        FontAwesome fa = new FontAwesome(FontAwesomeIcons.cog);
-        System.out.println(fa.toString(true));
-
-        Page p = getInstance();
-        p.getBody().add(fa);
-        System.out.println(p.toString(true));
-    }
-
-    @Test
-    public void testSetSize()
-    {
-    }
-
+	
+	public FontAwesomeTest()
+	{
+	}
+	
+	@Test
+	public void testIcon_FontAwesomeIcons_FontAwesomePropertiesArr()
+	{
+	}
+	
+	@Test
+	public void testIcon_FontAwesomeIcons()
+	{
+		FontAwesome fa = new FontAwesome(FontAwesomeIcons.cog);
+		System.out.println(fa.toString(true));
+		
+		Page p = getInstance();
+		p.getBody().add(fa);
+		System.out.println(p.toString(true));
+	}
+	
+	@Test
+	public void testSetSize()
+	{
+	}
+	
 }

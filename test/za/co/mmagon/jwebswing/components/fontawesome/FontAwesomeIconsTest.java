@@ -16,27 +16,26 @@
  */
 package za.co.mmagon.jwebswing.components.fontawesome;
 
-import za.co.mmagon.jwebswing.plugins.fontawesome.FontAwesomeIcons;
 import org.junit.Assert;
 import org.junit.Test;
+import za.co.mmagon.jwebswing.plugins.fontawesome.FontAwesomeIcons;
 
 /**
- *
  * @author ged_m
  */
 public class FontAwesomeIconsTest
 {
 
-    public FontAwesomeIconsTest()
-    {
-    }
+	public FontAwesomeIconsTest()
+	{
+	}
 
-    @Test
-    public void testToString()
-    {
-        FontAwesomeIcons icon = FontAwesomeIcons.$500px;
-        System.out.println(icon);
-        Assert.assertEquals("fa fa-500px", icon.toString());
-    }
+	@Test
+	public void testToString()
+	{
+		FontAwesomeIcons icon = FontAwesomeIcons.$500px;
+		System.out.println(icon);
+		Assert.assertEquals("fa fa-500px", icon.toString());
+	}
 
 }

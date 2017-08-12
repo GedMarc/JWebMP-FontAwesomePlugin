@@ -24,43 +24,43 @@ package za.co.mmagon.jwebswing.plugins.fontawesome;
  */
 public enum FontAwesomeProperties implements IFontAwesomeProperty
 {
-    /**
-     * 1em
-     */
-    $1x,
-    /**
-     * 2em
-     */
-    $2x,
-    /**
-     * 3em
-     */
-    $3x,
-    /**
-     * 4em
-     */
-    $4x,
-    /**
-     * 5em
-     */
-    $5x,
-    /**
-     * center
-     */
-    fw;
+	/**
+	 * 1em
+	 */
+	$1x,
+	/**
+	 * 2em
+	 */
+	$2x,
+	/**
+	 * 3em
+	 */
+	$3x,
+	/**
+	 * 4em
+	 */
+	$4x,
+	/**
+	 * 5em
+	 */
+	$5x,
+	/**
+	 * center
+	 */
+	fw;
 
-    private FontAwesomeProperties()
-    {
-    }
+	private FontAwesomeProperties()
+	{
+	}
 
-    /**
-     * Returns the font awesome class string
-     *
-     * @return
-     */
-    @Override
-    public String toString()
-    {
-        return "fa-" + name().replaceAll("\\$", "").replaceAll("_", "-");
-    }
+	/**
+	 * Returns the font awesome class string
+	 *
+	 * @return
+	 */
+	@Override
+	public String toString()
+	{
+		return "fa-" + name().replaceAll("\\$", "").replaceAll("_", "-");
+	}
 }
