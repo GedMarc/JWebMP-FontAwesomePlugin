@@ -16,8 +16,8 @@
  */
 package za.co.mmagon.jwebswing.components.fontawesome;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import za.co.mmagon.jwebswing.plugins.fontawesome.FontAwesomeIcons;
 
 /**
@@ -35,7 +35,7 @@ public class FontAwesomeIconsTest
 	{
 		FontAwesomeIcons icon = FontAwesomeIcons.$500px;
 		System.out.println(icon);
-		Assert.assertEquals("fa fa-500px", icon.toString());
+		Assertions.assertEquals("fa fa-500px", icon.toString());
 	}
 
 }
