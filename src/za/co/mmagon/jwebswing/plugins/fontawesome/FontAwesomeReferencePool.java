@@ -30,7 +30,7 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
 public enum FontAwesomeReferencePool implements ReferencePool
 {
 	FontAwesomeReference(null,
-	                     new CSSReference("FontAwesomeCSS", 4.6, "bower_components/font-awesome/css/font-awesome.min.css"));;
+	                     new CSSReference("FontAwesomeCSS", 4.6, "bower_components/font-awesome/css/font-awesome.min.css"));
 
 	private JavascriptReference javaScriptReference;
 	private CSSReference cssReference;
@@ -41,6 +41,7 @@ public enum FontAwesomeReferencePool implements ReferencePool
 
 	private FontAwesomeReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
+		this.javaScriptReference = javaScriptReference;
 		this.cssReference = cssReference;
 		this.cssReference.setPriority(RequirementsPriority.First);
 	}

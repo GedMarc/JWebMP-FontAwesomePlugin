@@ -506,7 +506,7 @@ public enum FontAwesomeIcons
 	rupee,
 	shekel,
 	sheqel,
-	$try,
+	try$,
 	turkish_lira,
 	usd,
 	won,

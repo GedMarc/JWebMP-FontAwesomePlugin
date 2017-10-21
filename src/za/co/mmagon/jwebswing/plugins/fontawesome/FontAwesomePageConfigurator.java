@@ -20,9 +20,6 @@ import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
-import za.co.mmagon.logger.LogFactory;
-
-import java.util.logging.Logger;
 
 /**
  * @author GedMarc
@@ -46,11 +43,10 @@ public class FontAwesomePageConfigurator extends PageConfigurator
 	
 	public static final String FontAwesome4Enabled = "font-awesome-4-enabled";
 	private static final long serialVersionUID = 1L;
-	private static final Logger log = LogFactory.getInstance().getLogger("FontAwesome");
 	
 	public FontAwesomePageConfigurator()
 	{
-
+		//Nothing Needed
 	}
 	
 	/**

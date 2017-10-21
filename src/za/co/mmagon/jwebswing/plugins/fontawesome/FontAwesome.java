@@ -23,18 +23,19 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * The FontAwesome project.
  * <p>
  *
- * @param <P> All the font awesome property CSS classes
+ * @param <P>
+ * 		All the font awesome property CSS classes
  *
  * @author Marc Magon
  * @version 1.0
  * @since 21 May 2016
  */
 @ComponentInformation(name = "Font Awesome 4.7", description = "The font awesome tag", url = "www.fontawesome.com")
-public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
+public class FontAwesome extends Italic
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/**
 	 * Construct a new instance of the font awesome
 	 *
@@ -48,7 +49,7 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
 		{
 			addClass(icon.toString());
 		}
-		
+
 		if (size != null)
 		{
 			for (FontAwesomeProperties fontAwesomeProperties : size)
@@ -61,7 +62,7 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
 		}
 		FontAwesomePageConfigurator.setRequired(this, true);
 	}
-	
+
 	/**
 	 * Construct a new instant of a font awesome icon
 	 *
@@ -71,12 +72,14 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
 	{
 		this(icon, (FontAwesomeProperties) null);
 	}
-	
+
 	/**
 	 * Creates a new FontAwesome Icon with the given icon and size
 	 *
-	 * @param icon The icon to use
-	 * @param size The size to have
+	 * @param icon
+	 * 		The icon to use
+	 * @param size
+	 * 		The size to have
 	 *
 	 * @return
 	 */
@@ -84,11 +87,12 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
 	{
 		return new FontAwesome(icon, size);
 	}
-	
+
 	/**
 	 * Creates a new FontAwesome Icon with the given icon and size
 	 *
-	 * @param icon The icon to use
+	 * @param icon
+	 * 		The icon to use
 	 *
 	 * @return
 	 */
@@ -96,7 +100,7 @@ public class FontAwesome<P extends Enum & IFontAwesomeProperty> extends Italic
 	{
 		return new FontAwesome(icon, (FontAwesomeProperties) null);
 	}
-	
+
 	/**
 	 * Sets the size of this icon
 	 *
