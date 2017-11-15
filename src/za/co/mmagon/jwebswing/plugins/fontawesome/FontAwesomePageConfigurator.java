@@ -55,12 +55,14 @@ public class FontAwesomePageConfigurator extends PageConfigurator
 	 * @param component
 	 * @param required
 	 */
+	@SuppressWarnings("unchecked")
 	public static void setRequired(Component component, boolean required)
 	{
 		component.getProperties().put(FontAwesome4Enabled, required);
 	}
 	
 	@Override
+	@SuppressWarnings("unchecked")
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())

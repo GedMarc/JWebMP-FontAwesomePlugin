@@ -43,6 +43,7 @@ public class FontAwesomeTest extends BaseTestClass
 	}
 	
 	@Test
+	@SuppressWarnings("unchecked")
 	public void testIcon_FontAwesomeIcons()
 	{
 		FontAwesome fa = new FontAwesome(FontAwesomeIcons.cog);
