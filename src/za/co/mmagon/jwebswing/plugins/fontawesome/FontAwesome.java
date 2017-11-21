@@ -37,6 +37,16 @@ public class FontAwesome extends Italic
 	private static final long serialVersionUID = 1L;
 
 	/**
+	 * Construct a new instant of a font awesome icon
+	 *
+	 * @param icon
+	 */
+	public FontAwesome(FontAwesomeIcons icon)
+	{
+		this(icon, (FontAwesomeProperties) null);
+	}
+
+	/**
 	 * Construct a new instance of the font awesome
 	 *
 	 * @param icon
@@ -61,16 +71,6 @@ public class FontAwesome extends Italic
 			}
 		}
 		FontAwesomePageConfigurator.setRequired(this, true);
-	}
-
-	/**
-	 * Construct a new instant of a font awesome icon
-	 *
-	 * @param icon
-	 */
-	public FontAwesome(FontAwesomeIcons icon)
-	{
-		this(icon, (FontAwesomeProperties) null);
 	}
 
 	/**

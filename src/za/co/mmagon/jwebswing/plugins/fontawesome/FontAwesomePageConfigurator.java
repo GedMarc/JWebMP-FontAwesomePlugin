@@ -40,15 +40,15 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 		pluginLastUpdatedDate = "2017/03/04")
 public class FontAwesomePageConfigurator extends PageConfigurator
 {
-	
+
 	public static final String FontAwesome4Enabled = "font-awesome-4-enabled";
 	private static final long serialVersionUID = 1L;
-	
+
 	public FontAwesomePageConfigurator()
 	{
 		//Nothing Needed
 	}
-	
+
 	/**
 	 * Sets the component as font awesome required to build
 	 *
@@ -60,7 +60,7 @@ public class FontAwesomePageConfigurator extends PageConfigurator
 	{
 		component.getProperties().put(FontAwesome4Enabled, required);
 	}
-	
+
 	@Override
 	@SuppressWarnings("unchecked")
 	public Page configure(Page page)
@@ -68,7 +68,7 @@ public class FontAwesomePageConfigurator extends PageConfigurator
 		if (!page.isConfigured())
 		{
 			page.getBody().getCssReferences().add(FontAwesomeReferencePool.FontAwesomeReference.getCssReference());
-			
+
 		}
 		return page;
 	}

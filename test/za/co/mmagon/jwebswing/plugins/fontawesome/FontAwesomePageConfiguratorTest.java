@@ -32,19 +32,19 @@ import za.co.mmagon.jwebswing.Page;
  */
 public class FontAwesomePageConfiguratorTest extends BaseTestClass
 {
-	
+
 	public FontAwesomePageConfiguratorTest()
 	{
 	}
-	
+
 	@Test
 	public void testSomeMethod()
 	{
 		Page p = getInstance();
 		p.getBody().add(FontAwesome.icon(FontAwesomeIcons.cog));
-		
+
 		System.out.println(p.toString(true));
-		
+
 	}
-	
+
 }

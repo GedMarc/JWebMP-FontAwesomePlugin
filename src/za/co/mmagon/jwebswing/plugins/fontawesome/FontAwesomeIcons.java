@@ -810,11 +810,11 @@ public enum FontAwesomeIcons
 	window_minimize,
 	window_restore,
 	wpexplorer,;
-	
-	private FontAwesomeIcons()
+
+	FontAwesomeIcons()
 	{
 	}
-	
+
 	/**
 	 * Returns the font awesome class string
 	 *

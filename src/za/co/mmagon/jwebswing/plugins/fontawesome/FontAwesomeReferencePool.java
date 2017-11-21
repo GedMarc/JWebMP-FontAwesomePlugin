@@ -35,27 +35,15 @@ public enum FontAwesomeReferencePool implements ReferencePool
 	private JavascriptReference javaScriptReference;
 	private CSSReference cssReference;
 
-	private FontAwesomeReferencePool()
+	FontAwesomeReferencePool()
 	{
 	}
 
-	private FontAwesomeReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	FontAwesomeReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		this.cssReference = cssReference;
 		this.cssReference.setPriority(RequirementsPriority.First);
-	}
-
-	@Override
-	public JavascriptReference getJavaScriptReference()
-	{
-		return javaScriptReference;
-	}
-
-	@Override
-	public void setJavaScriptReference(JavascriptReference javaScriptReference)
-	{
-		this.javaScriptReference = javaScriptReference;
 	}
 
 	@Override
@@ -68,5 +56,17 @@ public enum FontAwesomeReferencePool implements ReferencePool
 	public void setCssReference(CSSReference cssReference)
 	{
 		this.cssReference = cssReference;
+	}
+
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
+
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
 	}
 }
