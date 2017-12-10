@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -23,8 +23,6 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * The FontAwesome project.
  * <p>
  *
- * @param <P>
- * 		All the font awesome property CSS classes
  *
  * @author Marc Magon
  * @version 1.0
