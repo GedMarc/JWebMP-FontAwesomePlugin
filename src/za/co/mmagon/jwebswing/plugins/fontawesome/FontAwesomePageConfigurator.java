@@ -27,18 +27,22 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
  */
 @PluginInformation(pluginName = "Font Awesome 4.7",
 		pluginUniqueName = "font-awesome",
-		pluginDescription = "Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. ",
+		pluginDescription = "Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, " +
+				                    "and" + " anything that can be done with the power of CSS. ",
 		pluginVersion = "4.7",
-		pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons",
+		pluginDependancyUniqueIDs = "",
+		pluginCategories = "fonts, icons",
 		pluginSubtitle = "In a single collection, Font Awesome is a pictographic language of web-related actions. ",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-FontAwesomePlugin", pluginSourceUrl = "",
+		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-FontAwesomePlugin",
+		pluginSourceUrl = "",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-FontAwesomePlugin/wiki",
 		pluginOriginalHomepage = "http://fontawesome.io/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/FontAwesomePlugin.jar/download",
 		pluginIconUrl = "bower_components/font-awesome/icon.png",
 		pluginIconImageUrl = "bower_components/font-awesome/icon.png",
 		pluginLastUpdatedDate = "2017/03/04")
-public class FontAwesomePageConfigurator extends PageConfigurator
+public class FontAwesomePageConfigurator
+		extends PageConfigurator
 {
 
 	public static final String FontAwesome4Enabled = "font-awesome-4-enabled";
@@ -58,7 +62,8 @@ public class FontAwesomePageConfigurator extends PageConfigurator
 	@SuppressWarnings("unchecked")
 	public static void setRequired(Component component, boolean required)
 	{
-		component.getProperties().put(FontAwesome4Enabled, required);
+		component.getProperties()
+		         .put(FontAwesome4Enabled, required);
 	}
 
 	@Override
@@ -67,8 +72,9 @@ public class FontAwesomePageConfigurator extends PageConfigurator
 	{
 		if (!page.isConfigured())
 		{
-			page.getBody().getCssReferences().add(FontAwesomeReferencePool.FontAwesomeReference.getCssReference());
-
+			page.getBody()
+			    .getCssReferences()
+			    .add(FontAwesomeReferencePool.FontAwesomeReference.getCssReference());
 		}
 		return page;
 	}
