@@ -23,13 +23,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * The FontAwesome project.
  * <p>
  *
- *
  * @author Marc Magon
  * @version 1.0
  * @since 21 May 2016
  */
-@ComponentInformation(name = "Font Awesome 4.7", description = "The font awesome tag", url = "www.fontawesome.com")
-public class FontAwesome extends Italic
+@ComponentInformation(name = "Font Awesome 4.7",
+		description = "The font awesome tag",
+		url = "www.fontawesome.com")
+public class FontAwesome
+		extends Italic
 {
 
 	private static final long serialVersionUID = 1L;
@@ -113,5 +115,17 @@ public class FontAwesome extends Italic
 			addClass(size.toString());
 		}
 		return this;
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		return false;
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
 	}
 }
