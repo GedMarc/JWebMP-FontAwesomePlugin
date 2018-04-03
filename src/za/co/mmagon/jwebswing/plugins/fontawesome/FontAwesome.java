@@ -17,6 +17,10 @@
 package za.co.mmagon.jwebswing.plugins.fontawesome;
 
 import za.co.mmagon.jwebswing.base.html.Italic;
+import za.co.mmagon.jwebswing.base.html.interfaces.children.BodyChildren;
+import za.co.mmagon.jwebswing.base.html.interfaces.children.ListItemChildren;
+import za.co.mmagon.jwebswing.base.html.interfaces.children.PageChildren;
+import za.co.mmagon.jwebswing.base.html.interfaces.children.generics.ParagraphChildren;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
@@ -32,6 +36,7 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		url = "www.fontawesome.com")
 public class FontAwesome
 		extends Italic
+		implements ListItemChildren, ParagraphChildren, BodyChildren, PageChildren
 {
 
 	private static final long serialVersionUID = 1L;
