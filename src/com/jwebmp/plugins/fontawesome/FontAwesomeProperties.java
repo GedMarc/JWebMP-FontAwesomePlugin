@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,12 +14,55 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.fontawesome;
+package com.jwebmp.plugins.fontawesome;
 
 /**
- * @author GedMarc
+ * Specific file sizes or whether it is centered
+ *
+ * @author ged_m
+ * @since 21 May 2016
  */
-public interface IFontAwesomeProperty
+public enum FontAwesomeProperties
+		implements IFontAwesomeProperty
 {
+	/**
+	 * 1em
+	 */
+	$1x,
+	/**
+	 * 2em
+	 */
+	$2x,
+	/**
+	 * 3em
+	 */
+	$3x,
+	/**
+	 * 4em
+	 */
+	$4x,
+	/**
+	 * 5em
+	 */
+	$5x,
+	/**
+	 * center
+	 */
+	fw;
 
+	FontAwesomeProperties()
+	{
+	}
+
+	/**
+	 * Returns the font awesome class string
+	 *
+	 * @return
+	 */
+	@Override
+	public String toString()
+	{
+		return "fa-" + name().replaceAll("\\$", "")
+		                     .replaceAll("_", "-");
+	}
 }

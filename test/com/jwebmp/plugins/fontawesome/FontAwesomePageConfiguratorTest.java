@@ -14,53 +14,32 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.fontawesome;
+package com.jwebmp.plugins.fontawesome;
+
+import com.jwebmp.BaseTestClass;
+import com.jwebmp.Page;
+import org.junit.jupiter.api.Test;
 
 /**
- * Specific file sizes or whether it is centered
- *
- * @author ged_m
- * @since 21 May 2016
+ * @author GedMarc
  */
-public enum FontAwesomeProperties implements IFontAwesomeProperty
+public class FontAwesomePageConfiguratorTest
+		extends BaseTestClass
 {
-	/**
-	 * 1em
-	 */
-	$1x,
-	/**
-	 * 2em
-	 */
-	$2x,
-	/**
-	 * 3em
-	 */
-	$3x,
-	/**
-	 * 4em
-	 */
-	$4x,
-	/**
-	 * 5em
-	 */
-	$5x,
-	/**
-	 * center
-	 */
-	fw;
 
-	private FontAwesomeProperties()
+	public FontAwesomePageConfiguratorTest()
 	{
 	}
 
-	/**
-	 * Returns the font awesome class string
-	 *
-	 * @return
-	 */
-	@Override
-	public String toString()
+	@Test
+	public void testSomeMethod()
 	{
-		return "fa-" + name().replaceAll("\\$", "").replaceAll("_", "-");
+		Page p = getInstance();
+		p.getBody()
+		 .add(FontAwesome.icon(FontAwesomeIcons.cog));
+
+		System.out.println(p.toString(true));
+
 	}
+
 }

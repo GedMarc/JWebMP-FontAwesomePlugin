@@ -14,14 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.fontawesome;
+package com.jwebmp.plugins.fontawesome;
 
-import za.co.mmagon.jwebswing.base.html.Italic;
-import za.co.mmagon.jwebswing.base.html.interfaces.children.BodyChildren;
-import za.co.mmagon.jwebswing.base.html.interfaces.children.ListItemChildren;
-import za.co.mmagon.jwebswing.base.html.interfaces.children.PageChildren;
-import za.co.mmagon.jwebswing.base.html.interfaces.children.generics.ParagraphChildren;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
+import com.jwebmp.base.html.Italic;
+import com.jwebmp.base.html.interfaces.children.BodyChildren;
+import com.jwebmp.base.html.interfaces.children.ListItemChildren;
+import com.jwebmp.base.html.interfaces.children.PageChildren;
+import com.jwebmp.base.html.interfaces.children.generics.ParagraphChildren;
+import com.jwebmp.plugins.ComponentInformation;
 
 /**
  * The FontAwesome project.

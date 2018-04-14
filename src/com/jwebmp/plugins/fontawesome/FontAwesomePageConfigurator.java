@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.fontawesome;
+package com.jwebmp.plugins.fontawesome;
 
-import za.co.mmagon.jwebswing.Component;
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
+import com.jwebmp.Component;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.plugins.PluginInformation;
 
 /**
  * @author GedMarc

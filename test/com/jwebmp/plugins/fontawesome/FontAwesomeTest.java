@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 ged_m
+ * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -14,28 +14,44 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.fontawesome;
+package com.jwebmp.plugins.fontawesome;
 
-import org.junit.jupiter.api.Assertions;
+import com.jwebmp.BaseTestClass;
+import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
-import za.co.mmagon.jwebswing.plugins.fontawesome.FontAwesomeIcons;
 
 /**
- * @author ged_m
+ * @author GedMarc
  */
-public class FontAwesomeIconsTest
+public class FontAwesomeTest
+		extends BaseTestClass
 {
 
-	public FontAwesomeIconsTest()
+	public FontAwesomeTest()
 	{
 	}
 
 	@Test
-	public void testToString()
+	public void testIcon_FontAwesomeIcons_FontAwesomePropertiesArr()
 	{
-		FontAwesomeIcons icon = FontAwesomeIcons.$500px;
-		System.out.println(icon);
-		Assertions.assertEquals("fa fa-500px", icon.toString());
+	}
+
+	@Test
+	@SuppressWarnings("unchecked")
+	public void testIcon_FontAwesomeIcons()
+	{
+		FontAwesome fa = new FontAwesome(FontAwesomeIcons.cog);
+		System.out.println(fa.toString(true));
+
+		Page p = getInstance();
+		p.getBody()
+		 .add(fa);
+		System.out.println(p.toString(true));
+	}
+
+	@Test
+	public void testSetSize()
+	{
 	}
 
 }
