@@ -16,7 +16,6 @@
  */
 package com.jwebmp.plugins.fontawesome;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
 
@@ -24,7 +23,7 @@ import org.junit.jupiter.api.Test;
  * @author GedMarc
  */
 public class FontAwesomePageConfiguratorTest
-		extends BaseTestClass
+
 {
 
 	public FontAwesomePageConfiguratorTest()
@@ -34,7 +33,7 @@ public class FontAwesomePageConfiguratorTest
 	@Test
 	public void testSomeMethod()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		p.getBody()
 		 .add(FontAwesome.icon(FontAwesomeIcons.cog));
 
