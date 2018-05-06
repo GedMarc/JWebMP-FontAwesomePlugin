@@ -34,8 +34,8 @@ import com.jwebmp.plugins.ComponentInformation;
 @ComponentInformation(name = "Font Awesome 4.7",
 		description = "The font awesome tag",
 		url = "www.fontawesome.com")
-public class FontAwesome
-		extends Italic
+public class FontAwesome<J extends FontAwesome<J>>
+		extends Italic<J>
 		implements ListItemChildren, ParagraphChildren, BodyChildren, PageChildren
 {
 
@@ -88,7 +88,7 @@ public class FontAwesome
 	 *
 	 * @return
 	 */
-	public static FontAwesome icon(FontAwesomeIcons icon, FontAwesomeProperties... size)
+	public static FontAwesome<?> icon(FontAwesomeIcons icon, FontAwesomeProperties... size)
 	{
 		return new FontAwesome(icon, size);
 	}
@@ -101,7 +101,7 @@ public class FontAwesome
 	 *
 	 * @return
 	 */
-	public static FontAwesome icon(FontAwesomeIcons icon)
+	public static FontAwesome<?> icon(FontAwesomeIcons icon)
 	{
 		return new FontAwesome(icon, (FontAwesomeProperties) null);
 	}
@@ -113,7 +113,7 @@ public class FontAwesome
 	 *
 	 * @return
 	 */
-	public FontAwesome setSize(FontAwesomeProperties size)
+	public FontAwesome<?> setSize(FontAwesomeProperties size)
 	{
 		if (size != null)
 		{
