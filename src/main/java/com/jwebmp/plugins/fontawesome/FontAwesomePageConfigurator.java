@@ -28,7 +28,7 @@ import com.jwebmp.plugins.PluginInformation;
 @PluginInformation(pluginName = "Font Awesome 4.7",
 		pluginUniqueName = "font-awesome",
 		pluginDescription = "Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, " +
-				                    "and" + " anything that can be done with the power of CSS. ",
+		                    "and" + " anything that can be done with the power of CSS. ",
 		pluginVersion = "4.7",
 		pluginDependancyUniqueIDs = "",
 		pluginCategories = "fonts, icons",

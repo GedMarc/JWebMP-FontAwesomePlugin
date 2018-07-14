@@ -809,7 +809,8 @@ public enum FontAwesomeIcons
 	window_maximize,
 	window_minimize,
 	window_restore,
-	wpexplorer,;
+	wpexplorer,
+	;
 
 	FontAwesomeIcons()
 	{
@@ -823,6 +824,8 @@ public enum FontAwesomeIcons
 	@Override
 	public String toString()
 	{
-		return "fa fa-" + name().replaceAll("\\$", "").replaceAll("_", "-");
+		return "fa fa-" +
+		       name().replaceAll("\\$", "")
+		             .replaceAll("_", "-");
 	}
 }

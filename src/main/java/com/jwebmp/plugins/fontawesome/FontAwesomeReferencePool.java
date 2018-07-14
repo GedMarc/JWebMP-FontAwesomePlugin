@@ -27,7 +27,8 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author GedMarc
  * @since 20 Apr 2016
  */
-public enum FontAwesomeReferencePool implements ReferencePool
+public enum FontAwesomeReferencePool
+		implements ReferencePool
 {
 	FontAwesomeReference(null,
 	                     new CSSReference("FontAwesomeCSS", 4.6, "bower_components/font-awesome/css/font-awesome.min.css"));
