@@ -16,12 +16,12 @@
  */
 package com.jwebmp.plugins.fontawesome;
 
-import com.jwebmp.base.html.Italic;
-import com.jwebmp.base.html.interfaces.children.BodyChildren;
-import com.jwebmp.base.html.interfaces.children.ListItemChildren;
-import com.jwebmp.base.html.interfaces.children.PageChildren;
-import com.jwebmp.base.html.interfaces.children.generics.ParagraphChildren;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Italic;
+import com.jwebmp.core.base.html.interfaces.children.BodyChildren;
+import com.jwebmp.core.base.html.interfaces.children.ListItemChildren;
+import com.jwebmp.core.base.html.interfaces.children.PageChildren;
+import com.jwebmp.core.base.html.interfaces.children.generics.ParagraphChildren;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * The FontAwesome project.
