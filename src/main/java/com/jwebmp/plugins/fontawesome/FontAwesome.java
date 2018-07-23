@@ -75,7 +75,6 @@ public class FontAwesome<J extends FontAwesome<J>>
 				}
 			}
 		}
-		FontAwesomePageConfigurator.setRequired(this, true);
 	}
 
 	/**

@@ -16,10 +16,9 @@
  */
 package com.jwebmp.plugins.fontawesome;
 
-import com.jwebmp.core.Component;
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author GedMarc
@@ -42,28 +41,12 @@ import com.jwebmp.core.plugins.PluginInformation;
 		pluginIconImageUrl = "bower_components/font-awesome/icon.png",
 		pluginLastUpdatedDate = "2017/03/04")
 public class FontAwesomePageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	public static final String FontAwesome4Enabled = "font-awesome-4-enabled";
-	private static final long serialVersionUID = 1L;
 
 	public FontAwesomePageConfigurator()
 	{
 		//Nothing Needed
-	}
-
-	/**
-	 * Sets the component as font awesome required to build
-	 *
-	 * @param component
-	 * @param required
-	 */
-	@SuppressWarnings("unchecked")
-	public static void setRequired(Component component, boolean required)
-	{
-		component.getProperties()
-		         .put(FontAwesome4Enabled, required);
 	}
 
 	@Override
