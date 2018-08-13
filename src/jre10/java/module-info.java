@@ -10,8 +10,7 @@ module com.jwebmp.plugins.fontawesome {
 
 	requires java.validation;
 	requires java.logging;
-	requires commons.lang3;
 
 	provides IPageConfigurator with FontAwesomePageConfigurator;
-	opens com.jwebmp.plugins.fontawesome to com.fasterxml.jackson.databind,com.jwebmp.core;
+	opens com.jwebmp.plugins.fontawesome to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
