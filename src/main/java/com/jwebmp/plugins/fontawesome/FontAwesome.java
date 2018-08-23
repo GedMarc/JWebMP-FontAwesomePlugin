@@ -21,6 +21,7 @@ import com.jwebmp.core.base.html.interfaces.children.BodyChildren;
 import com.jwebmp.core.base.html.interfaces.children.ListItemChildren;
 import com.jwebmp.core.base.html.interfaces.children.PageChildren;
 import com.jwebmp.core.base.html.interfaces.children.generics.ParagraphChildren;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
@@ -36,7 +37,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		url = "www.fontawesome.com")
 public class FontAwesome<J extends FontAwesome<J>>
 		extends Italic<J>
-		implements ListItemChildren, ParagraphChildren, BodyChildren, PageChildren
+		implements ListItemChildren<IComponentHierarchyBase, J>, ParagraphChildren<IComponentHierarchyBase, J>, BodyChildren<IComponentHierarchyBase, J>, PageChildren
 {
 
 	private static final long serialVersionUID = 1L;
@@ -122,14 +123,14 @@ public class FontAwesome<J extends FontAwesome<J>>
 	}
 
 	@Override
-	public boolean equals(Object o)
-	{
-		return false;
-	}
-
-	@Override
 	public int hashCode()
 	{
 		return super.hashCode();
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		return false;
 	}
 }
