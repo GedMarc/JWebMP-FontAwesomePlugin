@@ -34,16 +34,16 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "",
 		pluginCategories = "fonts, icons",
 		pluginSubtitle = "In a single collection, Font Awesome is a pictographic language of web-related actions. ",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-FontAwesomePlugin",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-FontAwesomePlugin",
 		pluginSourceUrl = "",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-FontAwesomePlugin/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-FontAwesomePlugin/wiki",
 		pluginOriginalHomepage = "http://fontawesome.io/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/FontAwesomePlugin.jar/download",
 		pluginIconUrl = "bower_components/font-awesome/icon.png",
 		pluginIconImageUrl = "bower_components/font-awesome/icon.png",
 		pluginLastUpdatedDate = "2017/03/04")
 public class FontAwesomePageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<FontAwesomePageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
