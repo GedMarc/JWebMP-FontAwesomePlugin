@@ -40,7 +40,6 @@ public class FontAwesome<J extends FontAwesome<J>>
 		implements ListItemChildren<IComponentHierarchyBase, J>, ParagraphChildren<IComponentHierarchyBase, J>, BodyChildren<IComponentHierarchyBase, J>, PageChildren
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Construct a new instant of a font awesome icon
